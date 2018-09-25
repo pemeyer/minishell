@@ -6,7 +6,7 @@
 /*   By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/15 08:03:37 by pemeyer           #+#    #+#             */
-/*   Updated: 2018/09/18 13:12:50 by pemeyer          ###   ########.fr       */
+/*   Updated: 2018/09/25 12:08:08 by pemeyer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ int					ft_printf(const char *format, ...);
 int					get_next_line(const int fd, char **line);
 char				*ft_strtok(char *str, const char *delim);
 void				*ft_realloc(void *ptr, size_t prev_size);
+void				ft_putnstr(char *str, int n);
 
 #endif

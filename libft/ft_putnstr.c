@@ -1,44 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/25 14:14:03 by pemeyer           #+#    #+#             */
-/*   Updated: 2018/09/25 14:21:14 by pemeyer          ###   ########.fr       */
+/*   Created: 2018/09/25 12:08:25 by pemeyer           #+#    #+#             */
+/*   Updated: 2018/09/25 12:10:55 by pemeyer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include <sys/wait.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-char	*builtin_str[] =
+void	ft_putnstr(char *str, int n)
 {
-	"help",
-	"exit"
-};
+	int		i;
 
-int		(*builtin_func[]) (char **) = 
-{
-	&lsh_help,
-	&lsh_exit
-};
-
-int		lsh_num_builtins()
-{
-	return sizeof(builtin_str) / sizeof(char *);
+	i = -1;
+	if (n < 0)
+	{
+		while (str[++i] && i < (int)ft_strlen(str) + n)
+			ft_putchar(str[i]);
+	}
+	else
+	{
+		while (str[++i] && i < n)
+			ft_putchar(str[i]);
+	}
 }
-
-int		lsh_exit(char **args)
-{
-	args = NULL;
-	return (0);
-}
-
-

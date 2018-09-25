@@ -6,7 +6,7 @@
 #    By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/23 18:16:39 by pemeyer           #+#    #+#              #
-#    Updated: 2018/09/18 12:51:54 by pemeyer          ###   ########.fr        #
+#    Updated: 2018/09/25 12:07:10 by pemeyer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME		= libft.a
@@ -45,6 +45,7 @@ FILES		= ft_memset.c\
 			 ft_putchar.c\
 			 ft_putnchar.c\
 			ft_putstr.c\
+			ft_putnstr.c\
 		   ft_putendl.c\
 			ft_putchar_fd.c\
 	 ft_putstr_fd.c\
