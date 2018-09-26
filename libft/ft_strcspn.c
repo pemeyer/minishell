@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.h                                        :+:      :+:    :+:   */
+/*   ft_strcspn.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/25 14:14:03 by pemeyer           #+#    #+#             */
-/*   Updated: 2018/09/26 11:51:42 by pemeyer          ###   ########.fr       */
+/*   Created: 2018/09/26 09:16:21 by pemeyer           #+#    #+#             */
+/*   Updated: 2018/09/26 09:18:49 by pemeyer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include <sys/wait.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-# define QUOTE(x) (x == '"' || x == '\'')
+#include "libft.h"
 
-void    header(void);
-int     launch(char **args);
-int     lsh_exit(void);
-int     lsh_cd(char **args);
-int     lsh_echo(char **args);
-int     lsh_help(char **args);
+int     ft_strcspn(const char *s1, const char *s2)
+{
+    int ret;
 
+    ret = 0;
+    while (*s1)
+        if (ft_strchr(s2, *s1))
+            return (ret);
+        else
+        {
+            s1++;
+            ret++;
+        }
+    return (ret);
+}

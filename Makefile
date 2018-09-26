@@ -6,15 +6,15 @@
 #    By: pemeyer <pemeyer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/12 08:57:52 by pemeyer           #+#    #+#              #
-#    Updated: 2018/09/18 12:03:00 by pemeyer          ###   ########.fr        #
+#    Updated: 2018/09/26 10:11:00 by pemeyer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = minishell
 
 SRC = main.c\
-	  builtin_log.c\
-	  builtins1.c\
+	  header.c\
+	  builtins1.c
 
 
 LIB = libft/libft.a

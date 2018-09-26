@@ -6,7 +6,7 @@
 #    By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/23 18:16:39 by pemeyer           #+#    #+#              #
-#    Updated: 2018/09/25 12:07:10 by pemeyer          ###   ########.fr        #
+#    Updated: 2018/09/26 09:15:19 by pemeyer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME		= libft.a
@@ -70,6 +70,8 @@ ft_strnequ.c\
 ft_strsub.c\
 ft_strtrim.c\
 ft_strsplit.c\
+ft_strspn.c\
+ft_strcspn.c\
 ft_itoa.c\
 ft_memcpy_rev.c\
 ft_lstnew.c\

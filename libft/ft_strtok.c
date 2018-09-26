@@ -6,7 +6,7 @@
 /*   By: pemeyer <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/17 12:05:23 by pemeyer           #+#    #+#             */
-/*   Updated: 2018/09/18 13:09:26 by pemeyer          ###   ########.fr       */
+/*   Updated: 2018/09/26 09:19:20 by pemeyer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_strtok(char *str, const char *delim)
 		p = str;
 	else if (!p)
 		return (0);
-	str = p + strspn(p, delim);
-	p = str + strcspn(str, delim);
+	str = p + ft_strspn(p, delim);
+	p = str + ft_strcspn(str, delim);
 	if (p == str)
 		return (p = 0);
 	*p = 0;
